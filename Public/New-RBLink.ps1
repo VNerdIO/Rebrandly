@@ -40,8 +40,11 @@ Function New-RBLink{
             "Accept"        = "application/json"
             "Content-Type"  = "application/json"
             "apikey"        = $RBKey
-            "workspace"     = $RBWSId
         }
+        if($RBWSId){
+            $Header.add("workspace",$RBWSId)
+        }
+    
         $apiurl = 'https://api.rebrandly.com/v1/links'
 
         $body = @{"destination"="$Destination"}

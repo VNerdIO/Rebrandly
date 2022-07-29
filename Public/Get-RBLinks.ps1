@@ -27,8 +27,11 @@ Function Get-RBLinks{
         $Header = @{
             "Content-Type"  = "application/json"
             "apikey"        = $RBKey
-            "workspace"     = $RBWSId
         }
+        if($RBWSId){
+            $Header.add("workspace",$RBWSId)
+        }
+
         $apiurl = 'https://api.rebrandly.com/v1/links'
     }
 	process{
@@ -40,7 +43,7 @@ Function Get-RBLinks{
 			$ErrorMessage = $_.Exception.Message
 			$FailedItem = $_.Exception.ItemName
 			
-			Write-Output "$FailedItem - $ErrorMessage"
+			Write-Output "$FailedItem - $ErrorMessage : $r"
 			Return $False
 		}
 		finally{}
