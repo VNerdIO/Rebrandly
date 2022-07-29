@@ -9,10 +9,10 @@
     Get-RBLinks
 
     .PARAMETER RBWSId Optional
-    If you have multiple Workspaces, you can specify that Id here. The script looks for $global:RBWSId
+    If you have multiple Workspaces, you can specify that Id here. The script looks for $global:RBWSId.
 
     .PARAMETER RBKey Required
-    You'll need an API key. The script looks for $global:RBKey
+    You'll need an API key. The script looks for $global:RBKey.
     
     .OUTPUTS
     An Array with the following info

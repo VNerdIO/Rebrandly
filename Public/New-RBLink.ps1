@@ -6,20 +6,20 @@
     Create a link and (optionally) apply a custom domain, slashtag, and/or title.
 
     .EXAMPLE
-    Create a shortcut using rebrand.ly for mysite.com and title it "My Site", no slashtag
+    Create a shortcut using rebrand.ly for mysite.com and title it "My Site", no slashtag.
      New-RBLink -Destination "https://mysite.com" -Title "my site"
 
-    Create a shortcut using a custom domain for mysite.com, no title or slashtag
+    Create a shortcut using a custom domain for mysite.com, no title or slashtag.
      New-RBLink -Destination "https://mysite.com" -Domain "registered.domain"
 
-    Create a shortcut using a custom domain for mysite.com with a slashtag, no title
+    Create a shortcut using a custom domain for mysite.com with a slashtag, no title.
      New-RBLink -Destination "https://mysite.com" -Domain "registered.domain" -Slashtag "mysite"
 
     .PARAMETER RBWSId Optional
-    If you have multiple Workspaces, you can specify that Id here. The script looks for $global:RBWSId
+    If you have multiple Workspaces, you can specify that Id here. The script looks for $global:RBWSId.
 
     .PARAMETER RBKey Required
-    You'll need an API key. The script looks for $global:RBKey
+    You'll need an API key. The script looks for $global:RBKey.
 
     .PARAMETER Destination Required
     The full destination address you want to create a short url for.
