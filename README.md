@@ -3,7 +3,7 @@
 # Rebrandly
 Powershell module to interact with Rebrandly API
 
-# HOWTO
+# Quick Start
 
 Assumption: git is installed
 
