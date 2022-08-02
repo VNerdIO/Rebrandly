@@ -10,6 +10,6 @@ Assumption: git is installed
 - open Powershell prompt, cd to Documents\Powershell\Modules
 - execute `git clone https://github.com/VNerdIO/Rebrandly`
 - Type `Import-Module Rebrandly`
-- Get/store an api key securely. Store it in memory as `$global:RBKey` so the module will have access.
+- Get/store an api key securely. Store it in memory as `$global:RBKey` or pass it to the `-RBKey` parameter.
 - If you are using a workspace, store that id in memory at `$global:RBWSId`
-- See the documentation (`Get-Help New-RBLink -Full`)
+- Checkout the documentation (`Get-Help New-RBLink -Full`)
