@@ -11,5 +11,5 @@ Assumption: git is installed
 - execute `git clone https://github.com/VNerdIO/Rebrandly`
 - Type `Import-Module Rebrandly`
 - Get/store an api key securely. Store it in memory as `$global:RBKey` so the module will have access.
-- If you are using a workspace, store that id in memory at `$global:WBWSId`
+- If you are using a workspace, store that id in memory at `$global:RBWSId`
 - See the documentation (`Get-Help New-RBLink -Full`)
