@@ -1,6 +1,7 @@
 [![PSScriptAnalyzer](https://github.com/VNerdIO/Rebrandly/actions/workflows/powershell.yml/badge.svg)](https://github.com/VNerdIO/Rebrandly/actions/workflows/powershell.yml)
 
-# Rebrandly
+# Rebrandly Powershell Module
+
 Powershell module to interact with Rebrandly API
 
 # Quick Start
